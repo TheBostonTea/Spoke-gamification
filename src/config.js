@@ -68,6 +68,9 @@ import HubsSoundPackSource from "./ui/assets/sources/HubsSoundPackSource";
 
 import TroikaTextNode from "./editor/nodes/TroikaTextNode";
 import TroikaTextNodeEditor from "./ui/properties/TroikaTextNodeEditor";
+// Add my Nodes and Editors here!
+import QuestionNode from "./editor/nodes/QuestionNode";
+import QuestionNodeEditor from "./ui/projects/QuestionNodeEditor";
 
 export function createEditor(api, settings) {
   const editor = new Editor(api, settings);
@@ -99,8 +102,8 @@ export function createEditor(api, settings) {
   editor.registerNode(MediaFrameNode, MediaFrameNodeEditor);
   editor.registerNode(AudioZoneNode, AudioZoneNodeEditor);
   editor.registerNode(TroikaTextNode, TroikaTextNodeEditor);
+  editor.registerNode(QuestionNode, QuestionNodeEditor);
   editor.registerNode(MirrorNode, MirrorNodeEditor);
-
 
   editor.registerSource(new ElementsSource(editor));
   editor.registerSource(new MyAssetsSource(editor));
