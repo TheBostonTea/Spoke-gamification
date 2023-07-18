@@ -2,7 +2,7 @@ import React from "react";
 import NodeEditor from "./NodeEditor";
 import { QuestionMark } from "styled-icons/boxicons-regular";
 
-function QuestionNodeEditor(props) {
+export default function QuestionNodeEditor(props) {
   return <NodeEditor {...props} description={QuestionNodeEditor.description} />;
 }
 

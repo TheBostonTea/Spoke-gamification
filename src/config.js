@@ -70,7 +70,7 @@ import TroikaTextNode from "./editor/nodes/TroikaTextNode";
 import TroikaTextNodeEditor from "./ui/properties/TroikaTextNodeEditor";
 // Add my Nodes and Editors here!
 import QuestionNode from "./editor/nodes/QuestionNode";
-import QuestionNodeEditor from "./ui/projects/QuestionNodeEditor";
+import QuestionNodeEditor from "./ui/properties/QuestionNodeEditor";
 
 export function createEditor(api, settings) {
   const editor = new Editor(api, settings);

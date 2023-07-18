@@ -1,4 +1,4 @@
-import { Model } from "three";
+import Model from "../objects/Model";
 import EditorNodeMixin from "./EditorNodeMixin";
 
 export default class QuestionNode extends EditorNodeMixin(Model) {
